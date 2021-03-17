@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+div {
+    position: absolute;
+}
+#header  {
+    background-color: rgb(124, 198, 248);
+    top: 0;
+    height: 150px;
+    width: 100%;
+}
+#center {
+    background-color: rgb(206, 206, 206);
+    top: 150px;
+    bottom: 0;
+    width: 100%;
+}
+#left {
+    background-color: rgb(185, 185, 185);
+    top: 150px;
+    height: 100%;
+    width: 200px;
+}
+#right {
+    background-color: rgb(185, 185, 185);
+    right: 0;
+    top: 150px;
+    height: 100%;
+    width: 200px;
+}
+#footer {
+    background-color: rgb(124, 198, 248);
+    bottom: 0;
+    height: 150px;
+    width: 100%;
+}
