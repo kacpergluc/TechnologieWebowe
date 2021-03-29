@@ -16,9 +16,9 @@ body {
     display: flex;
     background-color: rgb(255, 255, 255);
     justify-content: space-between;
-    padding-bottom: 40px;
+    padding-bottom: 5px;
     border-bottom: 2px solid #444;
-    align-items: center;
+    align-items: flex-end;
 }
 #column-left {
     width: 400px;
@@ -31,12 +31,41 @@ body {
     font-size: 20px;
     padding: 0 20px 0 20px;
 }
+#logo2 {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+#logo2-text {
+    text-align: center;
+    font-size: 25px;
+    color: rgb(0, 143, 179);
+    padding-bottom: 50px;
+}
+#columns2 {
+    height: 300px;
+    display: flex;
+    padding-bottom: 15px;
+    margin-bottom: 5px;
+    border-bottom: 2px solid #444;
+}
+#column-left2 {
+    width: 500px;
+    padding-right: 10px;
+}
+#column-right2 {
+    width: 500px;
+    padding-left: 10px;
+}
 #circles {
     display: flex;
     justify-content: center;
     text-transform: uppercase;
     text-align: center;
     font-size: 25px;
+    color: rgb(255, 255, 255);
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 #circle {
     width: 200px;
@@ -70,11 +99,33 @@ body {
 #circle3:hover {
     opacity: 0.85;
 }
+.columns3-class {
+    width: 240px;
+    font-size: 25px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #444;
+}
+#columns3 {
+    display: flex;
+    justify-content: space-between;
+}
+.columns4-class {
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 240px;
+    text-decoration: none;
+}
+#columns4 {
+    display: flex;
+    justify-content: space-between;
+}
 #footer {
     width: 100%;
     margin-top: 40px;
     padding: 40px;
-    color: #fff;
+    text-align: center;
+    color: rgb(107, 107, 107);
     height: 200px;
     background-color: #242e30;
     background-image: url(zabek.jpg);
