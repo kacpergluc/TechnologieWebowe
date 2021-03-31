@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-image: url("img/tlo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main {
+    width: 460px;
+}
+header {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+#header2 {
+    display: flex;
+    justify-content: center;
+    color: #cbd6df;
+    font-size: 10px;
+    padding-bottom: 30px;
+}
+#img {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #fff;
+}
+#row1 {
+    display: flex;
+    justify-content: space-evenly;
+}
