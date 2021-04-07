@@ -1,0 +1,35 @@
+body {
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+main {
+    width: 1125px;
+}
+#menu {
+    height: 50px;
+    background-color: #252a3a;
+    color: rgb(76, 76, 250);
+    width: 1125px;
+    justify-content: center;
+}
+#menuText {
+    font-size: 30px;
+    padding-left: 1020px;
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+#menu:hover {
+    height: 600px;
+}
+#menuCompose {
+    width: 300px;
+    height: 100px;
+    justify-content: center;
+}
+#mail1 {
+    display: flex;
+    
+}
