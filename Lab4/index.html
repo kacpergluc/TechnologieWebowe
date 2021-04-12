@@ -8,24 +8,29 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <main>
-        <div id="menu">
-            <div id="menuText">Menu</div>
-            <!-- <div id="menuCompose">Compose</div> -->
+    <div id="menu">
+        <div id="composeBox"></div>
+            <div id="compose">Compose</div>
+        <div id="menuText">
+            Inbox <span class="pow">(2)</span>
+            <p>Important</p>
+            <p>Sent</p>
+            <p>Drafts</p>
+            <p>Trash</p>
         </div>
-        <div id="mails">
-            <div id="mailList">
-                <div id="mail1">
-                    <div id="avatar1"><img src="avatary/p5.png" alt="May June"></div>
-                    <div id="mail1Content">
-                        <div id="name1">May June</div>
-                        <div id="title1">New York New Yoork</div>
-                        <div id="mail1ShortText">Hey, confirm our meeting today, Fifth Avenue. Hmm?</div>
-                    </div>
-                </div>
-            </div>
-            <div id="mail"></div>
+        <div id="labels" class="pow">LABELS</div>
+        <div id="labelPrivate" class="labelStyle">
+            <div id="yellowBox"class="labelBoxStyle"></div>
+            <div id="private" class="labelTextStyle">Private</div>
+        </div>
+        <div id="labelJob" class="labelStyle">
+            <div id="blueBox"class="labelBoxStyle"></div>
+            <div id="job" class="labelTextStyle">Job</div>
+        </div>
+        <div id="labelFlights" class="labelStyle">
+            <div id="greenBox"class="labelBoxStyle"></div>
+            <div id="flights" class="labelTextStyle">Flights</div>
+        </div>
     </div>
-    </main>
 </body>
 </html>
