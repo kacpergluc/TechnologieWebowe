@@ -1,9 +1,10 @@
 body {
     margin: 0px;
+    width: 100%;
     font-family: Arial, Helvetica, sans-serif;
 }
 #menu {
-    position: absolute;
+    position: fixed;
     width: 150px;
     height: 100%;
     background-color: #252a3a;
@@ -57,4 +58,123 @@ body {
 }
 #greenBox {
     background-color: green;
+}
+#mailList {
+    position: absolute;
+    width: 350px;
+    height: 100%;
+    left: 150px;
+    border-right: 1px solid #999;
+}
+#mail1 {
+    display: flex;
+    padding: 14px 16px;
+    border-bottom: 1px solid #999;
+}
+#mail1:hover {
+    background-color: #eee;
+}
+#mail2 {
+    display: flex;
+    padding: 14px 16px;
+    border-left: 6px solid #1B98F8;
+    border-bottom: 1px solid #999;
+}
+#mail3 {
+    display: flex;
+    padding: 14px 16px;
+    border-left: 6px solid #1B98F8;
+    border-bottom: 1px solid #999;
+}
+#mail4 {
+    display: flex;
+    padding: 14px 16px;
+    border-bottom: 1px solid #999;
+}
+#mail5 {
+    display: flex;
+    padding: 14px 16px;
+    border-bottom: 1px solid #999;
+}
+#mail6 {
+    display: flex;
+    padding: 14px 16px;
+    border-bottom: 1px solid #999;
+}
+#mail7 {
+    display: flex;
+    padding: 14px 16px;
+    border-bottom: 1px solid #999;
+}
+.avatary {
+    margin-left: 8px;
+    height: 42px;
+    width: 42px;
+}
+.avatary img {
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+}
+.mailContent {
+    padding-left: 10px;
+}
+.imie {
+    font-size: 13px;
+    color: #999;
+    text-transform: uppercase;
+}
+.tytul {
+    font-size: 16px;
+    color: black;
+}
+.podglad {
+    font-size: 13px;
+    color: black;
+    margin: 7px 0;
+}
+#displayedMail {
+    position: absolute;
+    float: left;
+    left: 500px;
+}
+header {
+    padding-top: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #999;
+    display: flex;
+    justify-content: space-between;
+}
+#headerText {
+    font-size: 32px;
+    color: black;
+}
+#headerInfo {
+    font-size: 16px;
+}
+.pow2 {
+    color: #1b98f8;
+}
+.pow3 {
+    color: #999;
+}
+#boxes {
+    display: flex;
+    justify-content: center;
+}
+.boxesClass {
+    margin: 2px;
+    padding: 6px 26px;
+    border-radius: 16px;
+    border: 1px solid #666;
+}
+#forward {
+    background-color: #999;
+}
+#displayedMailContent {
+    font-size: 16px;
+    margin: 16px 0;
+    padding-left: 25px;
 }
