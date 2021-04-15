@@ -178,3 +178,35 @@ header {
     margin: 16px 0;
     padding-left: 25px;
 }
+@media screen and (max-width: 639px){
+    body {
+        margin: 0px;
+    }
+    #menu {
+        height: 50px;
+        width: 100%;
+        position: static;
+    }
+    #menu:hover {
+        height: 500px;
+    }
+    #compose {
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+    #mailList {
+        width: 100%;
+        left: 0px;
+        position: static;
+    }
+    #displayedMail {
+        position: static;
+        width: 100%;
+    }
+    #displayedMailContent {
+        padding-right: 25px;
+    }
+    #rightSide {
+        display: none;
+    }
+}
