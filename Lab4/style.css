@@ -3,14 +3,31 @@ body {
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
 }
+main {
+    display: grid;
+    grid-template-areas: 
+        "menu"
+        "mailList"
+        "displayedMail";
+}
 #menu {
-    position: fixed;
-    width: 150px;
-    height: 100%;
+    grid-area: menu;
+    height: 50px;
+    width: 100%;
     background-color: #252a3a;
+    /* position: static; */
 }
 #menuMenu {
-    display: none;
+    color: #1b98f8;
+    display: block;
+    text-align: right;
+    width: auto;
+    padding-top: 5px;
+    padding-right: 5px;
+}
+#compose {
+    margin-top: 0px;
+    padding-top: 10px;
 }
 #composeBox {
     padding-top: 25px;
@@ -62,14 +79,23 @@ body {
 #greenBox {
     background-color: green;
 }
+.hoverHidden {
+    background-color: #252a3a;
+    position: relative;
+    display: none;
+}
+#menu:hover .hoverHidden {
+    display: block;
+    height: 400px;
+}
+#compose {
+    margin-left: 120px;
+    margin-right: 120px;
+}
 #mailList {
-    float: left;
-    overflow: auto;
-    position: absolute;
-    width: 350px;
-    height: 100%;
-    left: 150px;
-    border-right: 1px solid #999;
+    grid-area: mailList;
+    width: 100%;
+    overflow: unset;
 }
 #mail1 {
     display: flex;
@@ -139,11 +165,12 @@ body {
     margin: 7px 0;
 }
 #displayedMail {
-    float: left;
-    overflow: auto;
-    position: absolute;
-    float: left;
-    left: 500px;
+    grid-area: displayedMail;
+    width: 100%;
+    overflow: unset;
+}
+#displayedMailContent {
+    padding-right: 25px;
 }
 header {
     padding-top: 30px;
@@ -170,6 +197,7 @@ header {
 #boxes {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .boxesClass {
     margin: 2px;
@@ -185,53 +213,52 @@ header {
     margin: 16px 0;
     padding-left: 25px;
 }
-@media screen and (max-width: 639px){
+@media screen and (min-width: 1400px) {    
     body {
         margin: 0px;
     }
+    main{
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+        grid-template-areas: 
+            "menu mailList displayedMail";
+    }
     #menu {
-        height: 50px;
-        width: 100%;
-        position: static;
+        grid-area: menu;
+        width: 150px;
+        height: 100%;
+        background-color: #252a3a;
     }
     #menuMenu {
-        color: #1b98f8;
-        display: block;
-        justify-content: right;
-        width: 50px;
-        left: 326px;
-        top: 2px;
-    }
-    #compose {
-        margin-top: 0px;
-        padding-top: 10px;
+        display: none;
     }
     .hoverHidden {
         background-color: #252a3a;
         position: relative;
-        display: none;
-    }
-    #menu:hover .hoverHidden {
         display: block;
-        height: 400px;
+    }
+    #composeBox {
+        padding-top: 25px;
     }
     #compose {
-        margin-left: 120px;
-        margin-right: 120px;
-    }
+        margin: 16px;
+        padding: 8px 16px;
+    } 
     #mailList {
-        width: 100%;
-        left: 0px;
-        position: static;
-    }
+        grid-area: mailList;
+        width: 350px;
+        height: 100%;
+        border-right: 1px solid #999;
+        float: left;
+        overflow: scroll;
+    }  
     #displayedMail {
-        position: static;
-        width: 100%;
-    }
-    #displayedMailContent {
-        padding-right: 25px;
-    }
-    #rightSide {
-        display: none;
-    }
+        grid-area: displayedMail;
+        float: left;
+        overflow: scroll;
+}
+@media screen and (max-width: 639px) {
+    main
+
 }
