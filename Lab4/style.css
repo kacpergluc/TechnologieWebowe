@@ -213,7 +213,46 @@ header {
     margin: 16px 0;
     padding-left: 25px;
 }
-@media screen and (min-width: 1400px) {    
+@media screen and (min-width: 639px) {
+    main {
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+        grid-template-areas: 
+            "menu mailList"
+            "menu displayedMail";
+    }
+    #menu {
+        grid-area: menu;
+        width: 150px;
+        height: 100%;
+        background-color: #252a3a;
+    }
+    #menuMenu {
+        display: none;
+    }
+    .hoverHidden {
+        background-color: #252a3a;
+        position: relative;
+        display: block;
+    }
+    #composeBox {
+        padding-top: 25px;
+    }
+    #compose {
+        margin: 16px;
+        padding: 8px 16px;
+    }
+    #mailList {
+        float: left;
+        overflow: scroll;
+    }
+    #displayedMail {
+        float: left;
+        overflow: scroll;
+    }
+}
+@media screen and (min-width: 1200px) {    
     body {
         margin: 0px;
     }
@@ -257,8 +296,5 @@ header {
         grid-area: displayedMail;
         float: left;
         overflow: scroll;
-}
-@media screen and (max-width: 639px) {
-    main
-
+    }
 }
