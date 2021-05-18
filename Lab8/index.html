@@ -9,13 +9,20 @@
 </head>
 <body>
     <script>
-        function change_text(){
+        function change_class() {
+            // document.getElementById("jeden").classList.remove('front');
+            // document.getElementById("dwa").classList.add('front');
             document.getElementById("przycisk").innerHTML = "Switch to Sushi Lover's Lunch! ▪️";
+
+            // if ( document.getElementsByClassName('panele').classList.contains('first') )
+            //     document.getElementsByClassName('panele').classList.remove('first');
+            // else
+            //     document.getElementsByClassName('panele').classList.add('first');
         }
         </script>
     <main>
         <div id="miejsceNaPanele">
-            <div class="panele">
+            <div class="panele front">
                 <div class="tytul">Happy Sushi Lunch</div>
                 <div class="miesko">
                     ▪️ California Roll
@@ -37,7 +44,7 @@
             </div>
         </div>
         <div id="miejsceNaPrzycisk">
-            <button id="przycisk" onclick="change_text()">▪️ Switch to Happy Sushu Lunch!</button>
+            <button id="przycisk" onclick="change_class()">▪️ Switch to Happy Sushu Lunch!</button>
         </div>
     </main>
 </body>
