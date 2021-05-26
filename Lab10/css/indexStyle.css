@@ -61,6 +61,7 @@ main {
 #upper {
     background-image: url(masthead@2x.jpg) ;
     background-size: cover;
+    background-position: center;
     grid-area: upper;
 }
 #content {
