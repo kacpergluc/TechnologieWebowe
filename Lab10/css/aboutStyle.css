@@ -63,42 +63,17 @@ main {
 #navi {
     font-size: 30px;
 }
-#menu-text-box {
-    max-width: 500px;
-    margin: 15px;
-    color: #fff;
-    padding-top: 50px;
+#zdjecie {
+    margin: 41px 16px 16px 16px;
+    border: 6px solid #fff;
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 0%);
 }
-#menu-text-box-title {
-    font-size: 60px;
-    font-weight: bolder;
-}
-#menu-text-box-text1 {
-    padding-top: 10px;
-    font-size: 30px;
-    padding-left: 3px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: italic;
-    color: #e2e2e2;
-}
-#menu-text-box-text2 {
-    padding-top: 20px;
-    font-size: 24px;
-    font-weight: bolder;
-}
-#menu-text-box-text3 {
-    padding-top: 60px;
-    font-size: 18px;
-    padding-bottom: 80px;
-}
-.rmore {
-    color: #3c4a52;
-    font-weight: bolder;
+#zdjecie img {
+    height: auto;
+    width: 100%;
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 0%);
 }
 #upper {
-    background-image: url(masthead@2x.jpg) ;
-    background-size: cover;
-    background-position: center;
     grid-area: upper;
 }
 #content {
@@ -111,15 +86,25 @@ main {
 }
 .contnet-box-title {
     color: #2d3438;
-    font-size: 34px;
+    font-size: 66px;
     font-weight: bolder;
 }
-.contnet-box-text {
+.contnet-box-title-text {
     padding-top: 18px;
-    color: #656a6f;
+    color: #3C4A52;
+    font-size: 24px;
+    line-height: 32px;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0px 0px 30px;
+}
+.content-box2 {
+    margin: 16px 16px;
+    color: #656A6F;
+    font-size: 16px;
 }
 .orange-dot {
-    font-size: 56px;
+    font-size: 66px;
     color: #ffc000;;
 }
 .orange-arrow {
@@ -174,9 +159,6 @@ main {
     #menu {
         padding: 60px 20px 20px 20px;
     }
-    #upper {
-        height: 1050px;
-    }
     #navi {
         display: none;
     }
@@ -215,22 +197,8 @@ main {
         background-color: #ffc000;
         color: #fff;
     }
-    #menu-text-box-title {
-        padding-top: 200px;
-        font-size: 98px;
-        font-weight: bolder;
-    }
-    #menu-text-box-text1 {
-        font-size: 28px;
-    }
-    #menu-text-box-text2 {
-        font-size: 24px;
-    }
-    #menu-text-box-text3 {
-        font-size: 18px;
-    }
-    #content {
+    #content-box2-box {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 }
