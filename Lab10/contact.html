@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selfy</title>
+    <link rel="stylesheet" href="css/contactStyle.css" />
+</head>
+<body>
+    <div id="menu-nav" class="menu-nav-class">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="styles.html">Styles</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <main>
+        <div id="upper">
+            <div id="menu">
+                <div id="logo"><img src="img/logo@2x.png" alt="logo"></div>
+                <div id="menu-roz">
+                    <a class="menu-rozwieniecie" href="index.html"><div class="menu-rozwieniecie-text">Home</div></a>
+                    <a class="menu-rozwieniecie" href="about.html"><div class="menu-rozwieniecie-text">About</div></a>
+                    <a class="menu-rozwieniecie" href="styles.html"><div class="menu-rozwieniecie-text">Styles</div></a>
+                    <a class="menu-rozwieniecie" href="gallery.html"><div class="menu-rozwieniecie-text">Gallery</div></a>
+                    <a class="menu-rozwieniecie" href="blog.html"><div class="menu-rozwieniecie-text">Blog</div></a>
+                    <a class="menu-rozwieniecie nav-active" href="contact.html"><div class="menu-rozwieniecie-text">Contact</div></a>
+                </div>
+                <div id="navi" onclick="openNav()">&#9776;</div>
+            </div>
+        </div>
+        <div id="content">
+            <div id="gallery-box">
+                <div id="gallery-box-text">
+                    <div class="content-box">
+                        <div class="contnet-box-title">Contact Me<span class="orange-dot">.</span></div>
+                        <div class="contnet-box-title-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, sunt!</div>
+                    </div>
+                    <div id="content-box2-box">
+                        <div class="content-box2">
+                            <div class="content-box2-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae amet voluptates fugit corrupti aspernatur! Cum corrupti totam voluptatem perferendis ea sapiente natus, nemo exercitationem! Blanditiis quis nisi nemo odio quam!<p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="contact-form">
+                <form id="contactform" action="php/processForm.php" method="post" novalidate="novalidate">
+                    <table width="100%" class="tableless">
+                        <tbody><tr><td><input type="text" id="name" name="name" placeholder="What's your name" autofocus=""></td></tr>
+                        <tr><td><input type="email" id="email" name="email" placeholder="Email goes here"></td></tr>
+                        <tr><td><textarea id="message" name="message" rows="5" cols="20" placeholder="Whats this about?"></textarea></td></tr>
+                        <tr><td><input name="button" class="btn" type="submit" value="Send Message" id="send"><br></td></tr>
+                    </tbody></table>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <div id="sidebar">
+            <div class="content-box">
+                <div class="sidenav-box-title">Networks<span class="orange-dot">.</span></div>
+            </div>
+            <div id="content-box2-box">
+                <div class="content-box2">
+                    <div class="content-box2-text">
+                        <span class="orange-arrow">🡆 </span>Follow Me on Facebook
+                        <p><span class="orange-arrow">🡆 </span>Hanging out on Dribbble</p>
+                        <p><span class="orange-arrow">🡆 </span>Tweeting up a storm</p>
+                    </div>
+                    <hr>
+                    <div class="contnet-box2-text" style="padding-bottom: 16px;">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit quod rem provident odio libero vero cupiditate dolore temporibus eaque facere!<p>
+                            <span class="orange-arrow">🡆 </span><span class="black-text" style="font-weight: bold;">See the full Theme Styles</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="lower">
+            <div id="logos">
+                <div class="social-link">
+                    <img src="img/icon-facebook@2x.png" alt="facebook">
+                </div>
+                <div class="social-link">
+                    <img src="img/icon-twitter@2x.png" alt="twitter">
+                </div>
+                <div class="social-link">
+                    <img src="img/icon-linkedin@2x.png" alt="facebook">
+                </div>
+            </div>
+            <div id="copyright">
+                <div id="copyright-logo"><img src="img/logo-foot@2x.png" alt="logo"></div>
+                <div id="copyright-text">@ Copyright Selfy 2013</div>
+            </div>
+        </div>
+    </main>
+    <script src="js/menu.js"></script>
+</body>
+</html>

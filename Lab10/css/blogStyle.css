@@ -63,12 +63,15 @@ main {
 #navi {
     font-size: 30px;
 }
-#zdjecie {
+.zdjecie {
     margin: 41px 16px 16px 16px;
     border: 6px solid #fff;
     text-shadow: 1px 1px 1px rgb(0 0 0 / 0%);
 }
-#zdjecie img {
+.zdjecie:hover {
+    opacity: .6;
+}
+.zdjecie img {
     height: auto;
     width: 100%;
     text-shadow: 1px 1px 1px rgb(0 0 0 / 0%);
@@ -86,7 +89,7 @@ main {
 }
 .contnet-box-title {
     color: #2d3438;
-    font-size: 66px;
+    font-size: 36px;
     font-weight: bolder;
 }
 .contnet-box-title-text {
@@ -117,6 +120,18 @@ main {
 }
 .social-link img {
     width: 31px;
+}
+.orange-text {
+    color: #ffc000;
+    font-weight: bold;
+    font-size: 14px;
+}
+.black-text {
+    color: #2d3438;
+}
+hr {
+    color: #656a6f;
+    margin: 48px 16px;
 }
 #logos {
     margin: 20px 15px 0px 15px;
@@ -197,8 +212,11 @@ main {
         background-color: #ffc000;
         color: #fff;
     }
-    #content-box2-box {
+    #gallery-box {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+    }
+    #gallery-box-text {
+        max-width: 400px;
     }
 }

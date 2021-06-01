@@ -63,12 +63,15 @@ main {
 #navi {
     font-size: 30px;
 }
-#zdjecie {
-    margin: 41px 16px 16px 16px;
+.zdjecie {
+    margin: 41px 0px 16px 0px;
     border: 6px solid #fff;
     text-shadow: 1px 1px 1px rgb(0 0 0 / 0%);
 }
-#zdjecie img {
+.zdjecie:hover {
+    opacity: .6;
+}
+.zdjecie img {
     height: auto;
     width: 100%;
     text-shadow: 1px 1px 1px rgb(0 0 0 / 0%);
@@ -86,7 +89,7 @@ main {
 }
 .contnet-box-title {
     color: #2d3438;
-    font-size: 66px;
+    font-size: 36px;
     font-weight: bolder;
 }
 .contnet-box-title-text {
@@ -117,6 +120,16 @@ main {
 }
 .social-link img {
     width: 31px;
+}
+.orange-text {
+    color: #ffc000;
+}
+.black-text {
+    color: #2d3438;
+}
+hr {
+    color: #656a6f;
+    margin: 48px 0px;
 }
 #logos {
     margin: 20px 15px 0px 15px;
@@ -197,8 +210,71 @@ main {
         background-color: #ffc000;
         color: #fff;
     }
-    #content-box2-box {
+    #gallery-box-one {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+    }
+    #gallery-box-one-text {
+        max-width: 400px;
+    }
+    #gallery-one {
+        display: grid;
+        grid-template-areas: 
+            "z1 z2"
+            "z3 z4"
+            "z5 z6";
+    }
+    #z1 {
+        grid-area: z1;
+    }
+    #z2 {
+        grid-area: z2;
+    }
+    #z3 {
+        grid-area: z3;
+    }
+    #z4 {
+        grid-area: z4;
+    }
+    #z5 {
+        grid-area: z5;
+    }
+    #z6 {
+        grid-area: z6;
+    }
+    #gallery-box-two {
+        display: flex;
+        justify-content: space-around;
+    }
+    #gallery-box-two-text {
+        max-width: 400px;
+    }
+    #gallery-two {
+        display: grid;
+        grid-template-areas:
+            "z7 z7"
+            "z8 z9";
+    }
+    #z7 {
+        grid-area: z7;
+    }
+    #z8 {
+        grid-area: z8;
+    }
+    #z9 {
+        grid-area: z9;
+    }
+    #gallery-box-three {
+        display: flex;
+        justify-content: space-around;
+    }
+    #gallery-box-three-text {
+        max-width: 400px;
+    }
+    #gallery-three {
+        display: grid;
+        grid-template-areas: 
+            "z10"
+            "z11";
     }
 }
