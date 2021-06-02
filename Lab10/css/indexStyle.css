@@ -209,11 +209,11 @@ main {
     }
     .menu-rozwieniecie:hover {
         background-color: #ffc000;
-        color: #fff;
+        color: #fff !important;
     }
     .nav-active {
         background-color: #ffc000;
-        color: #fff;
+        color: #fff !important;
     }
     #menu-text-box-title {
         padding-top: 200px;
