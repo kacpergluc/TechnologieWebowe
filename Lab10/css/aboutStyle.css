@@ -66,12 +66,11 @@ main {
 #zdjecie {
     margin: 41px 16px 16px 16px;
     border: 6px solid #fff;
-    text-shadow: 1px 1px 1px rgb(0 0 0 / 0%);
 }
 #zdjecie img {
     height: auto;
     width: 100%;
-    text-shadow: 1px 1px 1px rgb(0 0 0 / 0%);
+    vertical-align:top;
 }
 #upper {
     grid-area: upper;

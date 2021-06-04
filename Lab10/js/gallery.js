@@ -39,7 +39,7 @@ function openLightbox(imgSource) {
 }
 
 const zamknijLightbox = document.querySelector('.lightbox');
-zamknijLightbox.addEventListener('click', closeLightbox());
+zamknijLightbox.addEventListener('click', closeLightbox);
 
 function closeLightbox() {
     const lightbox = document.querySelector('.lightbox');

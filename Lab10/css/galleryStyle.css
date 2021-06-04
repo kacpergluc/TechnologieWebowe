@@ -66,20 +66,19 @@ main {
 .zdjecie {
     margin: 41px 0px 16px 0px;
     border: 6px solid #fff;
-    text-shadow: 1px 1px 1px rgb(0 0 0 / 0%);
     transition: all 0.3s ease-in-out;
 }
 .zdjecie:hover {
     opacity: .6;
 }
 .zdjecie img {
+    vertical-align:top;
     height: auto;
     width: 100%;
-    text-shadow: 1px 1px 1px rgb(0 0 0 / 0%);
 }
 .lightbox {
     background-color: rgba(0, 0, 0, 0.5);
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -92,7 +91,7 @@ main {
     display: flex;
 }
 #lighbox-image {
-    width: 70vw;
+    max-width: 70vw;
 }
 #upper {
     grid-area: upper;

@@ -176,12 +176,11 @@ hr {
 .zdjecie {
     margin: 41px 0px;
     border: 6px solid #fff;
-    text-shadow: 1px 1px 1px rgb(0 0 0 / 0%);
 }
 .zdjecie img {
     height: auto;
     width: 100%;
-    text-shadow: 1px 1px 1px rgb(0 0 0 / 0%);
+    vertical-align:top;
 }
 .form-style {
     padding: 0px 16px 0px 16px;
@@ -267,78 +266,6 @@ select, input[type=radio], input[type=checkbox] {
 	font-size: 14px;
 	font-family: 'robotoitalic';
 }
-#columns {
-    display: grid;
-    grid-template-areas: 
-    "one"
-    "two"
-    "three"
-    "four"
-    "five"
-    "six"
-    "seven"
-    "eight"
-    "nine"
-    "teen"
-    "eleven"
-    "twelve"
-    "thirteen"
-    "fourteen"
-    "fifteen"
-    "sixteen"
-    ;
-}
-#1 {
-    grid-area: one;
-}
-#2 {
-    grid-area: two;
-}
-#3 {
-    grid-area: three;
-}
-#4 {
-    grid-area: four;
-}
-#5 {
-    grid-area: five;
-}
-#6 {
-    grid-area: six;
-}
-#7 {
-    grid-area: seven;
-}
-#8 {
-    grid-area: eight;
-}
-#9 {
-    grid-area: nine;
-}
-#10 {
-    grid-area: teen;
-}
-#11 {
-    grid-area: eleven;
-}
-#12 {
-    grid-area: twelve;
-}
-#13 {
-    grid-area: thirteen;
-}
-#14 {
-    grid-area: fourteen;
-}
-#15 {
-    grid-area: fifteen;
-}
-#16 {
-    grid-area: sixteen;
-}
-/* .gray-text {
-    color: #656a6f;
-} */
 #sidebar {
     grid-area: sidebar;
     padding: 0px 16px;
@@ -430,23 +357,67 @@ select, input[type=radio], input[type=checkbox] {
     }
     .nav-active {
         background-color: #ffc000;
-        color: #fff;
+    }
+    .nav-active a {
+        text-decoration-color: #fff;
     }
     #content-box2-box {
         display: flex;
         justify-content: space-between;
     }
+    #image-row2 {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 40px;
+    }
+    #image-row3 {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 40px;
+    }
     #lower {
         border-top: 1px solid #cad2d7;;
     }
-    #columns {
-        display: grid;
-        grid-template-areas: 
-        "one one two two"
-        "three four five"
-        "six seven eight nine"
-        "teen eleven twelve twelve"
-        "thirteen fourteen fourteen fourteen"
-        "fifteen fifteen fifteen sixteen";
+    #columns-row1 {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 30px;
+    }
+    #columns-row2 {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 30px;
+    }
+    #columns-row3 {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 10px;
+    }
+    #columns-row4 {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 10px;
+    }
+    #columns-row4-1 {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 10px;
+        max-width: 50%;
+    }
+    #columns-row5 {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 10px;
+    }
+    #columns-row5-1 {
+        max-width: 20%;
+    }
+    #columns-row6 {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 10px;
+    }
+    #columns-row6-2 {
+        max-width: 25%;
     }
 }
