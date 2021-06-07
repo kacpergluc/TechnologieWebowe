@@ -5,31 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Battlefield V</title>
-    <link rel="stylesheet" href="indexStyle.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
     <main>
+        <div id="menu-nav" class="menu-nav-class">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="trybyGry.html">Tryby Gry</a>
+            <a href="#">Klasy Postaci</a>
+        </div>
         <div id="menu">
-            <div id="logo">BATTLEFIELD V
-                <div class="hoverHidden">
-                    <div id="trybyGry">tu bedzie link</div>
-                    <div id="klasyPostaci">tu bedzie link</div>
+            <div id="logo">
+                <a class="logo-class" href="index.html">BATTLEFIELD V</a>
+            </div>
+            <div id="menu-box">
+                <div id="navi" onclick="openNav()">☰</div>
+            </div>
+            <div id="menu-pc">
+                <div id="menu-pc-box">
+                    <a class="menu-pc-class" href="trybyGry.html">Tryby Gry</a>
+                    <a class="menu-pc-class" href="#">Klasy Postaci</a>
                 </div>
-            </div>
-            <div id="menuBox">
-                <div id="menuBoxText">MENU</div>
-            </div>
-            <div id="menuMenu">
-                <div id="trybyGry1">tu bedzie link</div>
-                <div id="klasyPostaci1">tu bedzie link</div>
             </div>
         </div>
         <div id="content">
-            <div id="zdjecia1Box">
-                <div id="zdjecie1"><img src="Zdjecia/6652_1.jpg"></div>
+            <div id="zdjecia1-box">
+                <div id="zdjecie1"><img src="zdjecia/6652_1.jpg" alt="zdjecie"></div>
             </div>
-            <div id="oGrze">O Grze</div>
-            <div id="oGrzeText">
+            <div class="content-title">O Grze</div>
+            <div class="content-text">
                 <p>Battlefield V jest to gra akcji typu "First Person Shooter" osadzona w realiach 2 Wojny Światowej. Oferuje one wiele trybów gry oraz przepięknych
                 map w których może brać udział aż 64 graczy.</p>
                 <p>Gra oferuje multum wyborów jeśli chodzi o styl rozgrywki. Miłośnicy czołgów mogą za pomocą czołgów przemierzać japońskie wyspy,
@@ -40,15 +44,17 @@
         </div>
         <div id="stopka">
             <div id="linia1">
-                <div class="stopkaWyr">Projekt zaliczeniowy na przedmiot Wprowadzenie do technologii webowych</div>
+                <div class="stopka-wyr">Projekt zaliczeniowy na przedmiot Wprowadzenie do technologii webowych</div>
             </div>
             <div id="linia2">
-                <div class="stopkaWyr">Kacper Głuc</div>
+                <div class="stopka-wyr">Kacper Głuc</div>
             </div>
             <div id="linia3">
-                <div class="stopkaWyr">Numer Albumu: 12851</div>
+                <div class="stopka-wyr">Numer Albumu: 12851</div>
             </div>
         </div>
     </main>
+    <script src="js/menu.js"></script>
+    <script src="js/zdjecia-lightbox.js"></script>
 </body>
 </html>
