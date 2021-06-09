@@ -103,6 +103,7 @@ main {
 .tryby-zdjecia {
     grid-area: tryby-zdjecia;
     padding: 20px 0px;
+    
 }
 .tryby-zdjecia img {
     height: auto;
