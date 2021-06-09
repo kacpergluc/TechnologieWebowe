@@ -24,7 +24,6 @@ main {
     transition: 0.5s;
     padding-top: 60px;
 }
-
 .menu-nav-class a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -33,11 +32,9 @@ main {
     display: block;
     transition: 0.3s;
 }
-
 .menu-nav-class a:hover {
     color: #f1f1f1;
 }
-
 .menu-nav-class .closebtn {
     position: absolute;
     top: 0;
@@ -103,9 +100,18 @@ main {
 .tryby-zdjecia {
     grid-area: tryby-zdjecia;
     padding: 20px 0px;
-    
+
 }
 .tryby-zdjecia img {
+    height: auto;
+    width: 100%;
+}
+.klasy-zdjecia {
+    grid-area: tryby-zdjecia;
+    padding: 20px 0px;
+
+}
+.klasy-zdjecia img {
     height: auto;
     width: 100%;
 }
@@ -152,6 +158,9 @@ main {
 hr {
     padding: 20px 0px;
     border: none;
+}
+.orange-dot {
+    color: #ffc000;
 }
 #stopka {
     grid-area: stopka;
@@ -206,13 +215,11 @@ hr {
         height: auto;
     }
     .tryby {
+        align-items: center;
         column-gap: 40px;
         display: grid;
         grid-template-areas: 
             "tryby-zdjecia tryby-text";
-    }
-    .tryby {
-        align-items: center;
     }
 }
 
@@ -224,6 +231,7 @@ hr {
         width: 600px;
         height: auto;
     }
+
     .content-title {
         padding: 60px 0px;
         font-size: 46px;
@@ -232,8 +240,23 @@ hr {
         column-gap: 80px;
         display: grid;
         grid-template-areas: 
-            "szturmowiec medyk"
-            "zwiadowca wsparcie";
+            "szturmowiec"
+            "medyk"
+            "zwiadowca"
+            "wsparcie";
+    }
+    .klasy-zdjecia-i-opis {
+        align-items: center;
+        display: grid;
+        column-gap: 40px;
+        grid-template-areas: 
+            "zdjecie opis";
+    }
+    .klasy-opis {
+        grid-area: opis;
+    }
+    .klasy-zdjecia {
+        grid-area: zdjecie;
     }
 }
 @media screen and (min-width: 1200px) {
